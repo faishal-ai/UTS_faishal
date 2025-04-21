@@ -15,7 +15,7 @@ class Books extends Model
         'title',
         'author',
         'stock'
-    ];
+    ]; 
 
     public function rentals(){
         return $this->hasOne(Rentals::class, 'book_id');
